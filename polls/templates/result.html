@@ -1,0 +1,26 @@
+﻿<p>您的搜索为: <strong>{{ query }}</strong></p>
+{% if author %}
+<p>找到{{ author|length }}个作者{{ author|pluralize }}。</p>
+<ul>
+{% for Author in author %}
+<li>{{ Author.Name }}</li> 
+<p>该作者的著作有：</p>
+	{% for b in book %}
+	<p><a href="../polls/detail/{{b.id}}/">{{b}}</a></p>
+	{% endfor %}
+{% endfor %}
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>您可以：</p>
+<p>1. <a href="..">返回主页</a></p>
+<p>2. <a href="../polls/bookslist/">查看图书列表</a></p>
+<p>3. <a href="../polls/">查看作者列表</a></p>
+</ul>
+{% else %}
+<p>没有找到该作者，请查询是否输入正确。</p>
+<p>您可以：</p>
+<p>1. <a href="..">返回主页</a></p>
+<p>2. <a href="../polls/bookslist/">查看图书列表</a></p>
+<p>3. <a href="../polls/">查看作者列表</a></p>
+{% endif %}

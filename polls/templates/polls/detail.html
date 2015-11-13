@@ -1,0 +1,36 @@
+﻿<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>详细信息</title>
+</head>
+<!--<script type="text/javascript">
+function show_confirm()
+{
+var r=confirm("确定要删除该书吗？");
+if (r==true)
+  {
+  alert("删除成功！");	
+  }
+}
+</script>-->
+<body>
+<p><strong>详细信息</strong></p>
+<p>书目：{{book.Title}}</p>
+<p>ISBN：{{book.ISBN}}</p>
+<p>出版社：{{book.Publisher}}</p>
+<p>出版日期：{{book.PublishDate}}</p>
+<p>价格：{{book.Price}}</p>
+<p>作者：{{author.Name}}</p>
+<p>作者年龄：{{author.Age}}</p>
+<p>作者国籍：{{author.Country}}</p>
+<p>&nbsp</p>
+<p><a href="../../shanchu/{{book.id}}"> 删除该书</a></p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>您可以：</p>
+<p>1. <a href="../../..">返回主页</a></p>
+<p>2. <a href="../../bookslist/">查看图书列表</a></p>
+<p>3. <a href="../..">查看作者列表</a></p>
+
+</body>
+</html>

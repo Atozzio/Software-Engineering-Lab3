@@ -1,0 +1,26 @@
+﻿<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎来到图书管理系统！</title>
+</head>
+
+<body>
+<div align="center">欢迎来到图书管理系统！</div>
+<p>1. 查询作者著作：</p>
+ 	搜索作者：<form action="/search/" method="get">
+	<input type="text" name="q">
+	<input type="submit"  value="搜索"/ >
+	{% if error %}
+	<body onload="javascript:alert('请重新输入！')"></body>
+	{% endif %}
+	
+	</form>
+<p>  2. 查看作者列表：</p>
+
+<p>&nbsp&nbsp<a href="../polls/">作者列表</a></p>
+<p>3. 浏览全部图书信息：</p>
+<p>&nbsp&nbsp<a href="../polls/bookslist/">图书信息</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
+abcdefg

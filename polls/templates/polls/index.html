@@ -1,0 +1,18 @@
+﻿{% if Author_list %}
+	<ul>
+		<br>作家列表：</br>
+		{% for a in Author_list %}
+			<li>{{a.Name}}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p>木有作家耶，请添加。</p>
+{% endif %}
+	
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p>您可以：</p>
+<p>1. <a href="..">返回主页</a></p>
+<p>2. <a href="../polls/bookslist/">查看图书列表</a></p>
+<p>3. <a href="../polls/">查看作者列表</a></p>
